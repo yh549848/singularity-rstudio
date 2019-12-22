@@ -1,9 +1,9 @@
 BootStrap: shub
-From: nickjer/singularity-r:3.6.2
+From: yh549848/singularity-r:4.0.5
 
 %labels
-  Maintainer Jeremy Nicklas
-  RStudio_Version 1.2.5033
+  Maintainer yh549848 (Forked from Jeremy Nicklas repository)
+  RStudio_Version 1.4.1106 (Modified from 1.2.5033)
 
 %help
   This will run RStudio Server
@@ -27,7 +27,7 @@ From: nickjer/singularity-r:3.6.2
 
 %post
   # Software versions
-  export RSTUDIO_VERSION=1.2.5033
+  export RSTUDIO_VERSION=1.4.1106
 
   # Install RStudio Server
   apt-get update
@@ -38,7 +38,7 @@ From: nickjer/singularity-r:3.6.2
   wget \
     --no-verbose \
     -O rstudio-server.deb \
-    "https://download2.rstudio.org/server/trusty/amd64/rstudio-server-${RSTUDIO_VERSION}-amd64.deb"
+    "https://download2.rstudio.org/server/bionic/amd64/rstudio-server-${RSTUDIO_VERSION}-amd64.deb" && \
   gdebi -n rstudio-server.deb
   rm -f rstudio-server.deb
 
