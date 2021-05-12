@@ -30,6 +30,18 @@ singularity pull --name singularity-rstudio.simg shub://nickjer/singularity-rstu
 
 ### RStudio Server
 
+[ADD] Prepare working directories:
+
+```
+mkdir -p $HOME/var/lib $HOME/var/run
+```
+
+[ADD] Export singularity bind paths:
+
+```
+echo 'export SINGULARITY_BINDPATH=$SINGULARITY_BINDPATH,$HOME/var:/var' >> $HOME/.bashrc
+```
+
 The `rserver` command is launched using the default run command:
 
 ```sh

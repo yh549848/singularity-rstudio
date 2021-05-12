@@ -1,9 +1,13 @@
-BootStrap: shub
-From: yh549848/singularity-r:4.0.5
+BootStrap: library
+From: yh549848/r/r:4.0.5
 
 %labels
   Maintainer yh549848 (Forked from Jeremy Nicklas repository)
-  RStudio_Version 1.4.1106 (Modified from 1.2.5033)
+  RStudio_Version 1.2.5042
+
+  Copyright (c) 2018 Jeremy Nicklas
+  Released under the MIT license
+  https://opensource.org/licenses/mit-license.php
 
 %help
   This will run RStudio Server
@@ -27,7 +31,7 @@ From: yh549848/singularity-r:4.0.5
 
 %post
   # Software versions
-  export RSTUDIO_VERSION=1.4.1106
+  export RSTUDIO_VERSION=1.2.5042
 
   # Install RStudio Server
   apt-get update

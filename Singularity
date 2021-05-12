@@ -1,1 +1,1 @@
-Singularity.4.0.5
+Singularity.1.2.5042--r405
