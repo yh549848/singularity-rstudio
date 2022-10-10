@@ -1,4 +1,5 @@
-singularity-rstudio.simg
+*.simg
+*.sif
 
 # Example module staging
 /example_module/3.4.3/*
